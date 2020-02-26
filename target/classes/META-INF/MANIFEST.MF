@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: aws-s3-operations
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: vyadav44
+Implementation-Vendor-Id: com.kaamaaya.awsoperations
+Build-Jdk: 1.8.0_161
+Implementation-URL: http://projects.spring.io/spring-boot/aws-s3-opera
+ tions/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
