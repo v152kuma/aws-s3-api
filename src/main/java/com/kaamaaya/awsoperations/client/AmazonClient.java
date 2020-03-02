@@ -27,10 +27,15 @@ import com.amazonaws.services.s3.model.GetObjectRequest;
 import com.amazonaws.services.s3.model.PutObjectRequest;
 import com.amazonaws.services.s3.model.S3Object;
 import com.amazonaws.services.s3.model.S3ObjectInputStream;
+import com.kaamaaya.awsoperations.entity.Awsdata;
+import com.kaamaaya.awsoperations.repository.AwsRepository;
 
 @Service
 public class AmazonClient {
 
+	@Autowired
+	private AwsRepository repository ;
+	
 	@Autowired
 	private AmazonS3Client s3client;
 
@@ -47,6 +52,10 @@ public class AmazonClient {
 			String fileName = generateFileName(multipartFile);
 			fileUrl = endpointUrl + "" + fileName;
 			uploadFileTos3bucket(fileName, file);
+			Awsdata data = new Awsdata();
+			data.setFilename(fileName);
+			data.setFileurl(fileUrl);
+			updateDatabse(data);
 			file.delete();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -60,10 +69,15 @@ public class AmazonClient {
 	{
 		if (files != null) {
 			files.forEach(multiPartFile -> {
+				String fileUrl = "";
 				try {
 					File file = convertMultiPartToFile(multiPartFile);
 					String fileName = generateFileName(multiPartFile);
 					uploadFileTos3bucket(fileName, file);
+					Awsdata data = new Awsdata();
+					data.setFilename(fileName);
+					data.setFileurl(fileUrl);
+					updateDatabse(data);
 					file.delete();
 				} catch (Exception e) {
 					// TODO Auto-generated catch block
@@ -119,4 +133,8 @@ public class AmazonClient {
 		return new ResponseEntity<>(bytes, httpHeaders, HttpStatus.OK);
 	}
 
+	private void updateDatabse(Awsdata data)
+	{
+		repository.save(data);
+	}
 }

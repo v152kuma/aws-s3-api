@@ -1,0 +1,8 @@
+com\kaamaaya\awsoperations\controller\BucketController.class
+com\kaamaaya\awsoperations\configurations\AWSConfiguration.class
+com\kaamaaya\awsoperations\configurations\SecurityConfig.class
+com\kaamaaya\awsoperations\entity\Awsdata.class
+com\kaamaaya\awsoperations\configurations\SwaggerConfig.class
+com\kaamaaya\awsoperations\AwsOperations.class
+com\kaamaaya\awsoperations\client\AmazonClient.class
+com\kaamaaya\awsoperations\repository\AwsRepository.class

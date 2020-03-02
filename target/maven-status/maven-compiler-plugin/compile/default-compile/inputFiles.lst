@@ -1,6 +1,8 @@
 C:\Users\vyadav44\Desktop\metadata-to-swagger\metadata-to-swagger-java-api\src\main\java\com\kaamaaya\awsoperations\controller\BucketController.java
 C:\Users\vyadav44\Desktop\metadata-to-swagger\metadata-to-swagger-java-api\src\main\java\com\kaamaaya\awsoperations\configurations\SwaggerConfig.java
+C:\Users\vyadav44\Desktop\metadata-to-swagger\metadata-to-swagger-java-api\src\main\java\com\kaamaaya\awsoperations\repository\AwsRepository.java
 C:\Users\vyadav44\Desktop\metadata-to-swagger\metadata-to-swagger-java-api\src\main\java\com\kaamaaya\awsoperations\configurations\AWSConfiguration.java
 C:\Users\vyadav44\Desktop\metadata-to-swagger\metadata-to-swagger-java-api\src\main\java\com\kaamaaya\awsoperations\AwsOperations.java
 C:\Users\vyadav44\Desktop\metadata-to-swagger\metadata-to-swagger-java-api\src\main\java\com\kaamaaya\awsoperations\configurations\SecurityConfig.java
+C:\Users\vyadav44\Desktop\metadata-to-swagger\metadata-to-swagger-java-api\src\main\java\com\kaamaaya\awsoperations\entity\Awsdata.java
 C:\Users\vyadav44\Desktop\metadata-to-swagger\metadata-to-swagger-java-api\src\main\java\com\kaamaaya\awsoperations\client\AmazonClient.java
